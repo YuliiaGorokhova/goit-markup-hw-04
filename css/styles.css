@@ -56,6 +56,19 @@ header .container {
   padding-bottom: 94px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /*-----header------*/
 
 header .container {
@@ -117,12 +130,6 @@ header .container {
   color: var(--first-link-color);
 }
 
-.header-contacts {
-  display: flex;
-  align-items: center;
-}
-
-.header-contacts,
 .header-mail,
 .header-tel {
   color: var(--second-text-color);
@@ -190,7 +197,7 @@ header .container {
 }
 
 .advantage-title {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 700;
   font-size: 14px;
@@ -264,7 +271,7 @@ header .container {
 }
 
 .team-name {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   font-weight: 500;
   font-size: 16px;
@@ -322,8 +329,11 @@ header .container {
   color: var(--third-text-color);
 }
 
+address {
+  margin-top: 20px;
+}
+
 .footer-address {
-  padding-top: 20px;
   padding-bottom: 0;
   margin-bottom: 0;
 }
@@ -340,8 +350,12 @@ header .container {
   color: var(--first-link-color);
 }
 
-.footer-item {
-  padding-top: 9px;
+.footer-list {
+  margin-top: 9px;
+}
+
+.footer-item:last-child {
+  margin-top: 9px;
 }
 
 /*-----Portfolio----*/
@@ -386,6 +400,8 @@ header .container {
 }
 
 .project-channel {
+  margin-top: 4px;
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
