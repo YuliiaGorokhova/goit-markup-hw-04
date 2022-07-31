@@ -69,6 +69,8 @@ header .container {
   margin: -1px;
 }
 
+
+
 /*-----header------*/
 
 header .container {
@@ -140,6 +142,15 @@ header .container {
   color: var(--first-link-color);
 }
 
+.icon-envelope,
+.icon-smartphone {
+  stroke: currentColor;
+  fill: red;
+  margin-right: 2px;
+  
+  background-color: aqua;
+}
+
 .header-mail:hover,
 .header-mail:focus {
   color: var(--first-link-color);
@@ -155,9 +166,19 @@ header .container {
 .hero {
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 600px;
+  max-width: 1600px;
 
   text-align: center;
   background-color: var(--first-background-color);
+
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-name {
@@ -209,8 +230,7 @@ header .container {
 
 .advantage-list {
   display: flex;
-  align-items: center;
-}
+  }
 
 .advantage-content {
   width: 270px;
@@ -218,6 +238,27 @@ header .container {
 
 .advantage-content:not(:last-child) {
   margin-right: 30px;
+}
+
+/*--.advantage-content::before {
+  display: block;
+  content: "";
+  height: 120px;
+outline: 1px solid red;
+background-image: url(../images/antenna\ 1.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+background-color: #F5F4FA;
+}--*/
+
+.icon-antenna,
+.icon-clock,
+.icon-diagram,
+.icon-astronaut
+ {
+  background-color: aqua;
+  
 }
 
 .advantage-item {
@@ -295,6 +336,30 @@ header .container {
 .team {
   background-color: #f5f4fa;
 }
+
+/*--client--*/
+
+.clients-title {
+  margin-bottom: 50px;
+font-weight: 700;
+font-size: 36px;
+line-height: 1.17;
+text-align: center;
+letter-spacing: 0.03em;
+color: #212121;
+}
+
+.clients-list {
+  display: flex;
+  align-items: center;
+  background-color: aqua;
+}
+
+.client {
+  background-color: aqua;
+}
+
+
 
 /*-----footer-----*/
 .footer {
